@@ -4,9 +4,10 @@ import css from './Filter.module.css';
 
 export function Filter({ filter, handleFilterChange }) {
     return (
-        <label className={css.label} htmlFor=''>
+        <label className={css.label} htmlFor='filterInput'>
             Find contacts by name 
             <input
+                id='filterInput'
                 className={css.input}
                 input={filter}
                 type='text'
