@@ -57,17 +57,20 @@ export const App = () => {
 
     return (
         <div className={css.container}>
-        <h2 className={css.title}>Phonebook</h2>
-        <ContactForm addContact={addContact} />
-        <h2 className={css.title}>Contacts</h2>
-        <Filter
-            filter={filter}
-            handleFilterChange={handleFilterChange}
-        />
-        <ContactList
-            contacts={filterContacts()}
-            deleteContact={deleteContact}
-        />
+            <h2 className={css.title}>Phonebook</h2>
+            <ContactForm addContact={addContact} />
+            <h2 className={css.title}>Contacts</h2>
+            <div className={css.filter}>
+                <Filter
+                    filter={filter}
+                    handleFilterChange={handleFilterChange}
+                />
+                <ContactList
+                    contacts={filterContacts()}
+                    deleteContact={deleteContact}
+                />
+            </div>
+            
         </div>
     );
 };

@@ -1,23 +1,19 @@
 .contacts__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 15px;
-    padding: 30px 40px;
-    background-color: #d8e9f0;
-    border-radius: 5px;
+    letter-spacing: none;
+    padding: 0;
 }
 
 .contacts__item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    gap: 50px;
     font-weight: 500;
+    padding: 10px;
 }
 
 .contacts__span {
-    margin-right: 10px;
+    margin-left: 10px;
     font-size: 15px;
     font-weight: 400;
 }
